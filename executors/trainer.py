@@ -9,14 +9,19 @@
 
 import os
 import torch
+import torch.nn as nn
+from torch.utils.data import DataLoader
 
 from logs.Logger import Logger
 from datasets.oxford_pet_dataset import OxfordIIITPet
 from models.vgg16 import VGG16
 from models.resnet50 import ResNet50
 from utils.metrics import accuracy, balanced_accuracy
+from utils.utils import set_seed
 
 
 class Trainer:
     def __init__(self, cfg):
+        set_seed(cfg.seed)
+
         self.cfg = cfg

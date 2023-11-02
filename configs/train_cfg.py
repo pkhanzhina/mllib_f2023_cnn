@@ -5,6 +5,7 @@ from configs.oxford_pet_cfg import cfg as dataset_cfg
 ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 cfg = EasyDict()
+cfg.seed = 0
 
 cfg.batch_size = 64
 cfg.lr = 1e-3
