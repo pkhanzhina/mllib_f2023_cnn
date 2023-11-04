@@ -25,3 +25,26 @@ def conv_block(in_channels: [], out_channels: [], conv_params=None, maxpool_para
         maxpool_params = dict(kernel_size=2, stride=2, padding=0)
 
     raise NotImplementedError
+
+
+def classifier_block(in_features: [], out_features: [], linear_params=None):
+    """
+        Функция построения блока полносвязных слоев нейронной сети VGG-16 (последний слой инициализируется отдельно).
+        Списки in_features и out_features задают последовательность полносвязных слоев с соответствующими параметрами.
+        После каждого полносвязного слоя используется функция активации nn.RelU(inplace=True) и
+        nn.Dropout(p=0.5, inplace=False).
+
+        :param in_features: List
+        :param out_features: List
+        :param linear_params: None or dict - дополнительные параметры nn.Linear
+        :return: nn.Sequential - последовательность слоев
+
+        # TODO: реализуйте данную функцию
+    """
+
+    assert len(in_features) == len(out_features)
+
+    if linear_params is None:
+        linear_params = dict(bias=True)
+
+    raise NotImplementedError

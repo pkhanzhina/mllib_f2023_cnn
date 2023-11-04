@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 
-from models.blocks.vgg16_blocks import conv_block
+from models.blocks.vgg16_blocks import conv_block, classifier_block
 
 
 class VGG16(nn.Module):
@@ -12,9 +12,19 @@ class VGG16(nn.Module):
         self.cfg = cfg
         self.nrof_classes = nrof_classes
 
-        # TODO: инициализируйте сверточные слои модели используя функцию conv_block
-        # TODO: инициализируйте полносвязные слои модели используя nn.Linear, после каждого полносвязного слоя
-        #  (кроме последнего) используется функция активации nn.ReLU и nn.Dropout
+        # TODO: инициализируйте сверточные слои модели, используя функцию conv_block
+        self.conv1 = conv_block(...)
+        self.conv2 = conv_block(...)
+        ...
+
+        # TODO: инициализируйте полносвязные слои модели, используя функцию classifier_block
+        #  (последний слой инициализируется отдельно)
+        self.linears = classifier_block(...)
+
+        # TODO: инициализируйте последний полносвязный слой для классификации с помощью
+        #  nn.Linear(in_features=4096, out_channels=nrof_classes)
+        self.classifier = ...
+
         raise NotImplementedError
 
     def forward(self, inputs):

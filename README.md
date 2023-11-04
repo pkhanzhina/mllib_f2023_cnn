@@ -18,7 +18,8 @@
 
 ### Часть 2:
 - реализовать функцию conv_block (models/blocks/vgg16_blocks.py)
-- реализовать нейронную сеть VGG-16, используя функцию conv_block
+- реализовать функцию classifier_block (models/blocks/vgg16_blocks.py)
+- реализовать нейронную сеть VGG-16, используя функции conv_block и classifier_block
 - обучить VGG-16 на наборе данных OxfordIIITPet
 
 ![VGG-16](https://neurohive.io/wp-content/uploads/2018/11/vgg16-neural-network-1.jpg)
@@ -32,6 +33,7 @@
 5. Сохранить модель с лучшим значением метрик на тестовой выборке (класс Trainer метод save_model)
 6. Все модели обучать до насыщения accuracy на тестовой выборке
 7. Обучать на GPU
+8. Во время обучения переводить модель в режим model.train(), во время evaluation - model.eval()
 
 
 ### Полезные ссылки
