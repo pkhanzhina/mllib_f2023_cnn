@@ -16,8 +16,12 @@
       3. Normalize(mean=[0.485, 0.456, 0.405], std=[0.229, 0.224, 0.225])
 - визуализация батча до и после применения аугментаций (функция show_batch)
 
-[//]: # (#### VGG-16)
-[//]: # (![VGG-16]&#40;https://neurohive.io/wp-content/uploads/2018/11/vgg16-neural-network-1.jpg&#41;)
+### Часть 2:
+- реализовать функцию conv_block (models/blocks/vgg16_blocks.py)
+- реализовать нейронную сеть VGG-16, используя функцию conv_block
+- обучить VGG-16 на наборе данных OxfordIIITPet
+
+![VGG-16](https://neurohive.io/wp-content/uploads/2018/11/vgg16-neural-network-1.jpg)
 
 
 ### Общие требования к обучению моделей:

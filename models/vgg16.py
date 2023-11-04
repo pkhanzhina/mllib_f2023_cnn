@@ -13,7 +13,8 @@ class VGG16(nn.Module):
         self.nrof_classes = nrof_classes
 
         # TODO: инициализируйте сверточные слои модели используя функцию conv_block
-        # TODO: инициализируйте полносвязные слои модели используя nn.Linear
+        # TODO: инициализируйте полносвязные слои модели используя nn.Linear, после каждого полносвязного слоя
+        #  (кроме последнего) используется функция активации nn.ReLU и nn.Dropout
         raise NotImplementedError
 
     def forward(self, inputs):
