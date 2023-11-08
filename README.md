@@ -24,6 +24,13 @@
 
 ![VGG-16](https://neurohive.io/wp-content/uploads/2018/11/vgg16-neural-network-1.jpg)
 
+### Часть 3:
+- реализовать классы блоков для ResNet-50 (models/blocks/resnet_blocks.py)
+- реализовать нейронную сеть ResNet-50, используя предыдущий пункт
+- добавить в ResNet-50 инициализацию весов
+- в классе Trainer добавить возможность выбрать модель для обучения согласно cfg.model_name в train_cfg.py
+- обучить базовую модель ResNet-50 на наборе данных OxfordIIITPet
+
 
 ### Общие требования к обучению моделей:
 1. Визуализация батча до и после применения аугментаций (utils/visualization.py функция show_batch)
@@ -44,3 +51,5 @@
 - https://github.com/pkhanzhina/mllib_f2023_mlp/blob/master/executors/mlp_trainer.py
 - https://pytorch.org/vision/main/generated/torchvision.transforms.ColorJitter.html
 - https://pytorch.org/vision/main/auto_examples/others/plot_visualization_utils.html#sphx-glr-auto-examples-others-plot-visualization-utils-py
+- https://arxiv.org/pdf/1512.03385.pdf
+- https://openaccess.thecvf.com/content_CVPR_2019/papers/He_Bag_of_Tricks_for_Image_Classification_with_Convolutional_Neural_Networks_CVPR_2019_paper.pdf
