@@ -44,12 +44,13 @@
 
 
 ### Полезные ссылки
-- https://www.robots.ox.ac.uk/~vgg/data/pets/
-- https://www.kaggle.com/datasets/polinakhanzhina/oxford-iiit-pet
-- https://arxiv.org/pdf/1409.1556.pdf
-- https://pytorch.org/docs/stable/generated/torch.nn.Conv2d.html
-- https://github.com/pkhanzhina/mllib_f2023_mlp/blob/master/executors/mlp_trainer.py
-- https://pytorch.org/vision/main/generated/torchvision.transforms.ColorJitter.html
-- https://pytorch.org/vision/main/auto_examples/others/plot_visualization_utils.html#sphx-glr-auto-examples-others-plot-visualization-utils-py
-- https://arxiv.org/pdf/1512.03385.pdf
-- https://openaccess.thecvf.com/content_CVPR_2019/papers/He_Bag_of_Tricks_for_Image_Classification_with_Convolutional_Neural_Networks_CVPR_2019_paper.pdf
+- [набор данных OxfordIIITPet](https://www.robots.ox.ac.uk/~vgg/data/pets/)
+- [набор данных OxfordIIITPet на kaggle](https://www.kaggle.com/datasets/polinakhanzhina/oxford-iiit-pet)
+- [статья по VGG](https://arxiv.org/pdf/1409.1556.pdf)
+- [документация PyTorch по сверточному слою](https://pytorch.org/docs/stable/generated/torch.nn.Conv2d.html)
+- [пример класса Trainer](https://github.com/pkhanzhina/mllib_f2023_mlp/blob/master/executors/mlp_trainer.py)
+- [аугментации torchvision](https://pytorch.org/vision/main/generated/torchvision.transforms.ColorJitter.html)
+- [пример визуализации батча](https://pytorch.org/vision/main/auto_examples/others/plot_visualization_utils.html#sphx-glr-auto-examples-others-plot-visualization-utils-py)
+- [статья по ResNet](https://arxiv.org/pdf/1512.03385.pdf)
+- [torchsummary](https://pypi.org/project/torch-summary/)
+- [Bag of Tricks](https://openaccess.thecvf.com/content_CVPR_2019/papers/He_Bag_of_Tricks_for_Image_Classification_with_Convolutional_Neural_Networks_CVPR_2019_paper.pdf)
