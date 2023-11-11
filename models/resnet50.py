@@ -27,7 +27,7 @@ class ResNet50(nn.Module):
         """
             Cверточные и полносвязные веса инициализируются согласно xavier_uniform
             Все bias инициализируются 0
-            В слое batch normalization вектор gamma инициализируется 1, вектор beta – 0
+            В слое batch normalization вектор gamma инициализируется 1, вектор beta – 0 (в базовой модели)
 
             # TODO: реализуйте этот метод
         """
@@ -35,8 +35,11 @@ class ResNet50(nn.Module):
 
     def weight_decay_params(self):
         """
-            Сбор параметров сети, для которые используется и не используется weight decay
+            Сбор параметров сети, для которых применяется (веса сверточных и полносвязных слоев)
+            и не применяется L2-регуляризация (все остальные параметры, включая bias conv и linear)
             :return: wo_decay, w_decay
+
+            # TODO: реализуйте этот метод
         """
         wo_decay, w_decay = [], []
         raise NotImplementedError
