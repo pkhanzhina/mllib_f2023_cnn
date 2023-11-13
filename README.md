@@ -68,8 +68,8 @@
 6) сохранить модель с лучшим значением accuracy на тестовой выборке (класс Trainer метод save_model)
 
 ### Этапы:
-1) обучить VGG-16 на наборе данных OxfordIIITPet (часть 2)
-2) обучить базовую модель ResNet-50 на наборе данных OxfordIIITPet (часть 3)
+1) обучить VGG-16 на наборе данных OxfordIIITPet (часть 2): SGD, lr=1e-3, momentum=0.9, weight_decay=5e-4, bs=64, max_epoch=100
+2) обучить базовую модель ResNet-50 на наборе данных OxfordIIITPet (часть 3): SGD, lr=0.001, momentum=0.8, bs=64, max_epoch=100
 3) обучить модель ResNet-50 c модификациями B,C,D на наборе данных OxfordIIITPet, используя предложенные трюки (часть 4)
 4) сравнить модели, обученные в предыдущих пунктах (можно добавить README.md/pdf/txt к репозиторию с описанием наблюдений)
 
@@ -84,7 +84,9 @@
 8. Обучать на GPU (например, [kaggle](https://www.kaggle.com/)/[colab](https://colab.research.google.com/)), пример notebook - `notebooks/kaggle_notebook.ipynb` 
 9. Во время обучения переводить модель в режим model.train(), во время evaluation - model.eval()
 
-### Dead line - 25 ноября
+
+
+### Dead line - 30 ноября
 
 ### Полезные ссылки
 - [набор данных OxfordIIITPet](https://www.robots.ox.ac.uk/~vgg/data/pets/)

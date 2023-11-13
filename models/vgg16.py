@@ -22,7 +22,7 @@ class VGG16(nn.Module):
         self.linears = classifier_block(...)
 
         # TODO: инициализируйте последний полносвязный слой для классификации с помощью
-        #  nn.Linear(in_features=4096, out_channels=nrof_classes)
+        #  nn.Linear(in_features=4096, out_features=nrof_classes)
         self.classifier = ...
 
         raise NotImplementedError

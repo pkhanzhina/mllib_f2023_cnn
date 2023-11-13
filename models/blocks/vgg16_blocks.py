@@ -6,7 +6,7 @@ def conv_block(in_channels: [], out_channels: [], conv_params=None, maxpool_para
     """
         Функция построения одного сверточного блока нейронной сети VGG-16. Списки in_channels и out_channels задают
         последовательность сверточных слоев с соответствующими параметрами фильтров. После каждого сверточного слоя
-        используется функция активации nn.RelU(inplace=True). В конце сверточных слоев необходимо применить Max Pooling
+        используется nn.BatchNorm2d и функция активации nn.RelU(inplace=True). В конце сверточных слоев необходимо применить Max Pooling
 
         :param in_channels: List - глубина фильтров в каждом слое
         :param out_channels: List - количество сверточных фильтров в каждом слое
